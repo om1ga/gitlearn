@@ -74,6 +74,15 @@ style.textContent = `
         padding: 15px;
         width: 250px;
         text-align: center;
+        background: linear-gradient(45deg, #FFD700, #FF8C00, #FF1493, #00BFFF, #FFD700);
+        background-size: 400% 400%;
+        animation: rainbow 10s ease infinite;
+    }
+    
+    @keyframes rainbow {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
     }
     
     .product-card img {
